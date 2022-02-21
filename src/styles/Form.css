@@ -1,0 +1,19 @@
+input {
+    width: 500px;
+    padding: 8px;
+    outline: none;
+}
+
+#add-btn {
+    padding: 8px;
+    width: 80px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+h2 {
+    display: flex;
+    font-size: 34px;
+    justify-content: center;
+}

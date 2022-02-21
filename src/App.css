@@ -1,0 +1,22 @@
+
+.App {
+    display: flex;
+    justify-content:center;
+}
+
+h1 {
+    display: flex;
+    font-size: 48px;
+    text-decoration: underline;
+    justify-content:center;
+}
+
+label {
+    display: flex;
+    justify-content:center;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import '../styles/Form.css'
 
 const Form = (props) => {
   const [name, setName] = useState('')
@@ -28,7 +29,7 @@ const Form = (props) => {
     autoComplete="off"
     onChange={handleChange}
     />
-    <button disabled={disabled}>Add</button>
+    <button id="add-btn" disabled={disabled}>Add</button>
     </form>
   )
 }

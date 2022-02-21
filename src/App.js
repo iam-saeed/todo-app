@@ -1,10 +1,11 @@
 
 import React, { useState } from 'react';
-
 import Todo from './components/Todo.jsx';
 import Form from './components/Form.jsx';
 import FilterButton from './components/FilterButton.jsx';
 import { nanoid } from "nanoid";
+
+import './App.css'
 
 
 function App(props) {
@@ -55,7 +56,7 @@ function App(props) {
     }
   
   const feature_list = FILTER_NAMES.map(name => (
-    <FilterButton key={name} name={name} isPressed={name === filter} setFilter={setFilter} />
+    <FilterButton key={name} name={name}  isPressed={name === filter} setFilter={setFilter} />
   ))
 
     const taskNoun = taskList.length !== 1 ? "tasks" : "task";
@@ -64,7 +65,8 @@ function App(props) {
 
   return (
     <div className="App">
-        <h1>Todo List</h1>
+      <div className="main_content">
+        <h1>Daily Objective</h1>
         <Form addTask={addTask} />
 
         <div className="filters btn-group stack-exception">
@@ -75,6 +77,7 @@ function App(props) {
         <ul className="todo-list stack-large stack-exception">
           {taskList}
         </ul>
+        </div>
     </div>
   );
 }

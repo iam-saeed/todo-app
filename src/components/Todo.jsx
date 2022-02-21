@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import '../styles/Todo.css';
 
 const Todo = (props) => {
   const [isEditing, setEditing] = useState(false);
