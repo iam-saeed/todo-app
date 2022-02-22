@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Todo from './components/Todo.jsx';
 import Form from './components/Form.jsx';
 import FilterButton from './components/FilterButton.jsx';
+import ls from 'local-storage'
 import { nanoid } from "nanoid";
 
 import './App.css'
@@ -60,8 +61,8 @@ function App(props) {
   ))
 
     const taskNoun = taskList.length !== 1 ? "tasks" : "task";
-    const alternateHeading = `${taskList.length} ${taskNoun} remaining`;
-    const heading = taskList.length === 0 ? 'Nothing scheduled yet!' : alternateHeading;
+    const alternateHeading = `${taskList.length} ${taskNoun}`;
+    const heading = taskList.length === 0 ? 'No tasks yet!' : alternateHeading;
 
   return (
     <div className="App">

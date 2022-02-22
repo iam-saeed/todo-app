@@ -3,6 +3,11 @@
     font-size: 26px;
 }
 
+.btn-toggle-btn[aria-pressed="true"] {
+  text-decoration: underline;
+  border-color: #4d4d4d;
+}
+
 .c-cb {
     display: flex;
     align-items: center;
